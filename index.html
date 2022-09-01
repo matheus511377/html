@@ -5,93 +5,123 @@
         <title>--Formulário Contato--</title>
         <meta charset="utf-8" />
         <link href="style.css" rel="stylesheet" media="all" />
-        <!--  <script src="JavaScript1.js"></script>-->
+        <script src="JavaScript1.js"></script>
     </head>
 
     <body>
-        <fieldset>
-            <legend>Efetuar login</legend>
-            <form name="meu_form">
-                
-            
-                
-                <label>Nome:</label></br>
-                <input type="text" id="nome" placeholder="Tiago Vale" required="required" name="nome" /> </br>
-                <label>Data de nascimento:</label></br>
-                <input id="data" name="data" type="date" required="required"> </br>
-                
-                <label>Email:</label></br>
-                <input type="email" id="email" required="required" placeholder="teste@gmail.com" name="email" /></br>
-                
-                <label>Senha</label></br>
-                <input type="password" id="senha" required="required" placeholder="12345" name="senha" /></br>
-             
-                <label>Sexo</label></br>
-                <select name="sexo"  id="sexo">
-                      <option value="trp">Masculino</option>
-                      <option value="tpa">Feminino</option>
-                </select> </br>
+        <div class="container-flex">
+            <div>
+                <fieldset>
+                    <legend>Efetuar registro</legend>
+                    <form onsubmit="return false" name="meu_form">
+                        
                     
-                <label>Telefone Residencial </label></br>
-                <input type="tel" id="telefone" required="required" pattern="[0-9]{2}[0-9]{9}" name="telefone" /></br>
-             
-                <label>Celular </label></br>
-                <input type="tel" id="celular" required="required" pattern="[0-9]{2}[0-9]{9}" name="celular" /></br>
-             
-                <label >Fumante</label></br>
-                <select name="sexo"  id="sexo">
-                      <option value="trp">Sim</option>
-                      <option value="tpa">Não</option>
-                </select> </br>
-                <label>Municipio de origem:</label></br>
-                <input type="text" id="municipio" placeholder="Igrejinha" required="required" name="municipio" /> </br>
-                <input type="submit" class="enviar" onclick="Cancelar();" value="Cancelar" />
-                <input type="submit" class="enviar" onclick="Enviar();" value="Gravar" />
-        </form>
-        
-        </fieldset>
+                        <div class="container-flex">
+                            <div class="nome">
+                                <label>Nome:</label></br>
+                                <input type="text" id="nome" placeholder="Tiago Vale" required="required" name="nome" /> </br>
+                            </div>
+                            <div>
+                                <label>Data de nascimento:</label></br>
+                                <input id="data" name="data" type="date" required="required"> </br>
+                            </div>
+                            
+                            
+                        </div>    
+                        
+                        <label>Email:</label></br>
+                        <input type="email" id="email" required="required" placeholder="teste@gmail.com" name="email" /></br>
+                        
+                        <label>Senha</label></br>
+                        <input type="password" id="senha" required="required" placeholder="12345" name="senha" /></br>
+                     
+                        <label>Sexo</label></br>
+                        <select name="sexo"  id="sexo">
+                              <option value="trp">Masculino</option>
+                              <option value="tpa">Feminino</option>
+                        </select> </br>
+                            
+                        <label>Telefone Residencial </label></br>
+                        <input type="tel" id="telefone" required="required" pattern="[0-9]{2}[0-9]{9}" name="telefone" /></br>
+                     
+                        <label>Celular </label></br>
+                        <input type="tel" id="celular" required="required" pattern="[0-9]{2}[0-9]{9}" name="celular" /></br>
+                     
+                        <label >Fumante</label></br>
+                        <select name="sexo"  id="sexo">
+                              <option value="trp">Sim</option>
+                              <option value="tpa">Não</option>
+                        </select> </br>
+                        <label>Municipio de origem:</label></br>
+                        <input type="text" id="municipio" placeholder="Igrejinha" required="required" name="municipio" /> </br>
+                        <div class="botao">
+                            <input type="submit" class="cancelar" onclick="Cancelar(); " value="Cancelar" />
+                            <input type="submit" class="enviar" onclick="Enviar(); " value="Gravar" />    
+                        </div>
+                        </form>
+                
+                </fieldset>
+         
+            </div>
+            <div>
+                
+                <fieldset>
+                    <legend>Dados</legend>
+                    <form  onsubmit="return false" name="meu_form2">
+                        
+                    
+                        <div class="container-flex">
+                            <div class="nome">
+                                <label>Nome:</label></br>
+                                <input disabled="" type="text" id="nome2" placeholder="Tiago Vale" required="required" name="nome" /> </br>
+                            </div>
+                            <div>
+                                <label>Data de nascimento:</label></br>
+                                <input disabled="" id="data2" name="data" type="date" required="required"> </br>
+                            </div>
+                            
+                            
+                        </div>    
+                        
+                        <label>Email:</label></br>
+                        <input disabled="" type="email" id="email2" required="required" placeholder="teste@gmail.com" name="email" /></br>
+                        
+                        <label>Senha</label></br>
+                        <input disabled="" type="password" id="senha2" required="required" placeholder="12345" name="senha" /></br>
+                     
+                        <label>Sexo</label></br>
+                        <select disabled="" name="sexo"  id="sexo2">
+                              <option value="trp">Masculino</option>
+                              <option value="tpa">Feminino</option>
+                        </select> </br>
+                            
+                        <label>Telefone Residencial </label></br>
+                        <input disabled="" type="tel" id="telefone2" required="required" pattern="[0-9]{2}[0-9]{9}" name="telefone" /></br>
+                     
+                        <label>Celular </label></br>
+                        <input disabled="" type="tel" id="celular2" required="required" pattern="[0-9]{2}[0-9]{9}" name="celular" /></br>
+                     
+                        <label >Fumante</label></br>
+                        <select disabled="" name="sexo"  id="sexo">
+                              <option value="trp">Sim</option>
+                              <option value="tpa">Não</option>
+                        </select> </br>
+                        <label>Municipio de origem:</label></br>
+                        <input disabled="" type="text" id="municipio2" placeholder="Igrejinha" required="required" name="municipio" /> </br>
+                        <div class="botao">
+                            <input id="teste" type="submit" onclick="Limpar(); return false;" value="Limpar" />    
+                        </div>
+                        </form>
+                
+                </fieldset>
+                
+            </div>
+            
+           
+           
 
-        <fieldset>
-            <legend>Dados</legend>
-            <form name="meu_form">
-                
-            
-                
-                <label>Nome:</label></br>
-                <input type="text" id="nome" placeholder="Tiago Vale" disabled="" name="nome" /> </br>
-                <label>Data de nascimento:</label></br>
-                <input id="data" name="data" type="date" disabled=""> </br>
-                
-                <label>Email:</label></br>
-                <input type="email" id="email" disabled="" placeholder="teste@gmail.com" name="email" /></br>
-                
-                <label>Senha</label></br>
-                <input type="password" id="senha" disabled="" placeholder="12345" name="senha" /></br>
+        </div>
              
-                <label>Sexo</label></br>
-                <select disabled="" name="sexo"  id="sexo">
-                      <option value="trp">Masculino</option>
-                      <option value="tpa">Feminino</option>
-                </select> </br>
-                    
-                <label>Telefone Residencial </label></br>
-                <input type="tel" id="telefone" disabled="" pattern="[0-9]{2}[0-9]{9}" name="telefone" /></br>
-             
-                <label>Celular </label></br>
-                <input type="tel" id="celular" disabled="" pattern="[0-9]{2}[0-9]{9}" name="celular" /></br>
-             
-                <label >Fumante</label></br>
-                <select disabled="" name="sexo"  id="sexo">
-                      <option value="trp">Sim</option>
-                      <option value="tpa">Não</option>
-                </select> </br>
-                <label>Municipio de origem:</label></br>
-                <input type="text" id="municipio" placeholder="Igrejinha" disabled="" name="municipio" /> </br>
-                <input type="submit" class="enviar" onclick="Enviar();" value="Limpar" />
-        </form>
-        
-        </fieldset>
-            
             
 
     </body>
